@@ -1,0 +1,48 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+}
+table
+
+{
+	border: 1px solid lightgray;
+	font-size: .9em;
+	color: #2f3031;
+	vertical-align: middle;
+	border-collapse: collapse;
+	
+}
+
+ th, td
+{
+	border-left: 1px solid lightgray;
+	padding: .3em 4em .3em .3em;
+	
+}
+
+th
+{
+	background-color: #5cbd08;
+	color:white;
+	font-weight: normal;
+	padding: .8em 5em .8em .3em;
+	
+}
+
+td  > img
+{
+	width:30px;
+	height:19px;
+	margin:.3em .3em;
+		vertical-align: middle;
+}
+
+tr:nth-child(2n+0)
+{
+	background-color:#ededda;
+}

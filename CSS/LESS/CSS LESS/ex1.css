@@ -1,0 +1,203 @@
+.linear-gradient {
+  background: #9215f2;
+  background: -moz-linear-gradient(top, #bf76f7 0%, #a945f5 41%, #9215f2 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a945f5), color-stop(41%, #a945f5), color-stop(100%, #9215f2));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #bf76f7 0%, #a945f5 41%, #9215f2 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #bf76f7 0%, #a945f5 41%, #9215f2 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #bf76f7 0%, #a945f5 41%, #9215f2 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #bf76f7 0%, #a945f5 41%, #9215f2 100%);
+  /* W3C */
+
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  height: 0;
+  content: "";
+  clear: both;
+}
+nav {
+  zoom: 1;
+}
+nav:after {
+  display: block;
+  height: 0;
+  content: "";
+  clear: both;
+}
+body,
+div,
+section,
+article,
+aside,
+header,
+input,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #9215f2;
+  color: #ffffff;
+  font-size: 87.5%;
+}
+body header div#header-container {
+  padding: 25px;
+}
+body header div#header-container.linear-gradient div#logo-container {
+  width: 500px;
+  float: left;
+}
+body header div#header-container div#reg-form-container {
+  float: right;
+  position: relative;
+  right: 5%;
+  top: 50%;
+  margin-bottom: 10px;
+}
+body header div#header-container div#reg-form-container label {
+  text-align: left;
+  margin: 10px;
+}
+body header div#header-container div#reg-form-container input[type="text"],
+body header div#header-container div#reg-form-container input[type="password"] {
+  background: #9215f2;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 3px;
+}
+body header div#header-container div#reg-form-container button {
+  background: #9215f2;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  border-style: outset;
+  padding: 5px 15px;
+}
+body header nav {
+  clear: both;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0 20px;
+}
+body header nav ul {
+  list-style-type: none;
+}
+body header nav ul li {
+  float: left;
+  padding: 10px;
+}
+body header nav ul li a {
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+body header nav ul li ul {
+  display: none;
+}
+body header nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: #bf76f7;
+}
+body header nav ul li:hover ul li {
+  height: 20px;
+  float: none;
+  padding: 10px 3px;
+  border-bottom: 1px solid black;
+}
+body header nav ul li:hover ul li:last-of-type {
+  border-bottom: 0;
+}
+body header nav ul li:hover ul li a {
+  text-decoration: none;
+  padding: 7px 3px;
+  line-height: 20px;
+}
+body section {
+  width: 72%;
+  float: left;
+  margin: 2%;
+}
+body section article {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 20px 0;
+  padding: 20px;
+}
+body section article header {
+  padding-bottom: 10px;
+  font-size: 1.1em;
+}
+body section article footer {
+  margin-top: 20px;
+  text-align: right;
+}
+body section article a {
+  color: #bf76f7;
+  text-decoration: none;
+}
+body aside {
+  float: left;
+  width: 20%;
+  min-width: 200px;
+  margin: 2%;
+}
+body aside > ul {
+  list-style-type: none;
+  padding: 20px 0;
+}
+body aside > ul > li {
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+body aside > ul > li h2 {
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+body aside > ul > li a {
+  color: #a896bd;
+  text-decoration: none;
+}
+body aside > ul > li em {
+  color: #a896bd;
+}
+body aside > ul > li ul {
+  padding-left: 25px;
+}
+body aside > ul > li ul li {
+  list-style-image: url("images/li-dot.png");
+}
+body footer {
+  position: relative;
+  bottom: 0;
+  clear: both;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+}

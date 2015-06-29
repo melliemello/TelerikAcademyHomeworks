@@ -1,0 +1,63 @@
+
+/* MixIns*/
+
+$width:16px;
+$height:16px;
+
+
+@mixin background-position ($x, $y) {
+	background-position: (-$x * $width) ((-$y * $height ) - $y);
+}
+
+/* End MixIns*/
+
+
+dt {float:left; clear:left; margin: 5px;}
+dd {float:left;}
+.sprite {
+	background-image: url("imgs/icons.png");
+	
+}
+
+	.icons {         /* in case there are images with differents sizes in the sprite*/
+		width:$width;
+		height:$height;
+	}
+	
+
+		.comment{ @include background-position(0, 0);}
+		.comment_add{ @include background-position(0,1);} 
+		.comment_delete{ @include background-position(0,2); } 
+		.comment_edit{ @include background-position(0,3);} 
+		.comments{@include background-position(0, 4); } 
+		.comments_add{ @include background-position(0, 5); } 
+		.comments_delete{@include background-position(0, 6); } 
+		.folder{@include background-position(0, 7);} 
+		.folder_add{ @include background-position(0, 8); } 
+		.folder_delete{@include background-position(0, 9);  } 
+		.folder_edit{@include background-position(0, 10);} 
+		.group{@include background-position(0, 11);} 
+		.group_add{ @include background-position(0,12); } 
+		.group_delete{@include background-position(0, 13); } 
+		.group_edit{ @include background-position(0, 14); } 
+		.page_white{ @include background-position(0, 15); } 
+		.page_white_acrobat{ @include background-position(0, 16); } 
+		.page_white_actionscript{@include background-position(0, 17);  } 
+		.page_white_add{ @include background-position(0, 18); } 
+		.page_white_c{ @include background-position(0, 19); } 
+		.page_white_camera{ @include background-position(0, 20); } 
+		.page_white_cplusplus{ @include background-position(0, 21); } 
+		.page_white_csharp{@include background-position(0, 22);  } 
+		.page_white_cup{ @include background-position(0, 23); } 
+		.page_white_delete{@include background-position(0, 24); } 
+		.page_white_edit{@include background-position(0, 25);  } 
+		.page_white_excel{ @include background-position(0, 26); } 
+		.page_white_php{@include background-position(0, 27);  } 
+		.page_white_powerpoint{@include background-position(0, 28); } 
+		.page_white_ruby{ @include background-position(0, 29); } 
+		.user{@include background-position(0, 30); } 
+		.user_add{@include background-position(0, 31); } 
+		.user_delete{@include background-position(0, 32);} 
+		.user_edit{@include background-position(0, 33);} 
+
+	

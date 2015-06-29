@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Exercise 8</title>
+		<style type="text/css">
+		
+		table , td, tfoot
+		{
+			border: 1px solid;
+			border-collapse: collapse;
+			padding: 3px;
+		}
+		
+		td.alignRight
+		{
+			text-align:right;
+		}
+		
+		tfoot
+		{
+			text-align: center;
+			background-color: #cfedff;
+			
+		}
+		
+		table td table td , table table
+		{
+			border: 0;
+		}
+		
+		button
+		{
+			margin:5px;
+		}
+		
+		textarea
+		{
+			resize: none;
+		}
+		
+		</style>
+		
+	</head>
+	<body>
+		<form name="myForm" method="post" action="#">
+			<table>
+				<colgroup>
+					<col width="150px">
+					<col width="300px;">
+				</colgroup>
+				<tfoot>
+					<tr>
+						<td colspan=2>
+							<button value="Submit" name="submitBttn">Submit</button>
+							<button value="Reset" name="resetBttn">Reset this form</button>
+						</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td class="alignRight"><label for="lastName">Last Name:</label></td>
+						<td><input type="text"  name="lastName" id="lastName"></td>
+					</tr>
+					<tr>
+						<td class="alignRight"><label for="firstName">First Name:</label></td>
+						<td><input type="text" name="firstName" id="firstName"></td>
+					</tr>
+					<tr>
+						<td class="alignRight"><label for="adress">Adress:</label></td>
+						<td><textarea cols="20" rows="15"  name="adress" id="adress"></textarea></td>
+					</tr>
+					<tr>
+						<td class="alignRight"><label for="city">City:</label></td>
+						<td>
+							<table>
+								<tr>
+									<td><input type="text" name="city" id="city" size="20"></td>
+									<td><label for="state">State:</label></td>
+									<td><input type="text" name="state" id="state" size="5"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="alignRight"><label for="country">Country:</label></td>
+						<td>
+							<select name="country" id="country">
+								<option value="val1" selected="selected">Bulgaria</option>
+								<option value="val2" >Germany</option>
+								<option value="val3" >France</option>
+								<option value="val4" >Italy</option>
+								<option value="val5" >Other</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="alignRight"><label for="zip">ZIP/Postal Code:</label></td>
+						<td><input type="text" size="7" value="0-0-0-0" id="zip" name="zip"/></td>
+					</tr>
+					<tr>
+						<td class="alignRight"><label for="countryCode">Phone (country code, city code, phone number)</label></td>
+						<td> (+ <input type="text" name="countryCode" id="countryCode" size="4" value="0000">)
+								<input type="text" name="cityCode" value="00" size="3">
+								<input type="tel" required="required" name="phone" size="10">
+						</td>
+					</tr>
+					<tr>
+						<td class="alignRight"><label for="email">E-mail:</label></td>
+						<td><input type="email" name="email"  id="email" required="required" pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b"></td>
+					</tr>
+					<tr>
+						<td class="alignRight"><label for="monthBD"> Birthday: </label></td>
+						<td>
+							Month: <input type="text" name="monthBD" size="2" id="monthBD" value="00"> 
+							Day: <input type="text" name="dayBD" value="00" size="2">
+							Year: <input type="text" name="yearBD" value="0000" size="4">
+						</td>
+					</tr>
+					<tr>
+						<td class="alignRight">Gender:</td>
+						<td>
+							<select>
+								<option value="female" selected="selected">Female</option>
+								<option value="male">Male</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="alignRight">Starting Date:</td>
+						<td>
+							<input type="radio" value="startdate1" name="date">21st January
+							<input type="radio" value="startdate2" name="date">21st February
+						</td>
+					</tr>
+					<tr>
+						<td class="alignRight"><label for="comments">Comments/ Questions:</label></td>
+						<td><textarea name="comments" id="comments" cols="20" rows="5"></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>

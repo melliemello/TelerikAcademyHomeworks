@@ -1,0 +1,3 @@
+Here is some text containing the 'finish' word as substring
+The wordfinish should be replaced in each line
+if it's found there

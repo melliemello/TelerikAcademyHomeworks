@@ -1,0 +1,119 @@
+/* MixIns*/
+/* End MixIns*/
+dt {
+  float: left;
+  clear: left;
+  margin: 5px; }
+
+dd {
+  float: left; }
+
+.sprite {
+  background-image: url("imgs/icons.png"); }
+
+.icons {
+  /* in case there are images with differents sizes in the sprite*/
+  width: 16px;
+  height: 16px; }
+
+.comment {
+  background-position: 0px 0px; }
+
+.comment_add {
+  background-position: 0px -17px; }
+
+.comment_delete {
+  background-position: 0px -34px; }
+
+.comment_edit {
+  background-position: 0px -51px; }
+
+.comments {
+  background-position: 0px -68px; }
+
+.comments_add {
+  background-position: 0px -85px; }
+
+.comments_delete {
+  background-position: 0px -102px; }
+
+.folder {
+  background-position: 0px -119px; }
+
+.folder_add {
+  background-position: 0px -136px; }
+
+.folder_delete {
+  background-position: 0px -153px; }
+
+.folder_edit {
+  background-position: 0px -170px; }
+
+.group {
+  background-position: 0px -187px; }
+
+.group_add {
+  background-position: 0px -204px; }
+
+.group_delete {
+  background-position: 0px -221px; }
+
+.group_edit {
+  background-position: 0px -238px; }
+
+.page_white {
+  background-position: 0px -255px; }
+
+.page_white_acrobat {
+  background-position: 0px -272px; }
+
+.page_white_actionscript {
+  background-position: 0px -289px; }
+
+.page_white_add {
+  background-position: 0px -306px; }
+
+.page_white_c {
+  background-position: 0px -323px; }
+
+.page_white_camera {
+  background-position: 0px -340px; }
+
+.page_white_cplusplus {
+  background-position: 0px -357px; }
+
+.page_white_csharp {
+  background-position: 0px -374px; }
+
+.page_white_cup {
+  background-position: 0px -391px; }
+
+.page_white_delete {
+  background-position: 0px -408px; }
+
+.page_white_edit {
+  background-position: 0px -425px; }
+
+.page_white_excel {
+  background-position: 0px -442px; }
+
+.page_white_php {
+  background-position: 0px -459px; }
+
+.page_white_powerpoint {
+  background-position: 0px -476px; }
+
+.page_white_ruby {
+  background-position: 0px -493px; }
+
+.user {
+  background-position: 0px -510px; }
+
+.user_add {
+  background-position: 0px -527px; }
+
+.user_delete {
+  background-position: 0px -544px; }
+
+.user_edit {
+  background-position: 0px -561px; }

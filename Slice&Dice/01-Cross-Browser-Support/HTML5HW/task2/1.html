@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Geo location</title>
+    <style>
+        h1 {
+            color: #0094ff;
+        }
+ 
+        span {
+            font-style: italic;
+        }
+ 
+        body > a {
+            display: block;
+            width: 200px;
+            margin-top: 25px;
+            padding: 10px 0;
+            text-align: center;
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        function onGetPosBtnClick() {
+ 
+            document.getElementById("output").innerHTML = "Locating...";
+ 
+            if ('geolocation' in navigator) {
+ 
+                navigator.geolocation.getCurrentPosition(displayLocation, fail, { enableHighAccuracy: true, maximumAge: Infinity, timeout: 27000 });
+            }
+            else {
+ 
+              alert("No geolocation available in this browser!");
+                        }
+                }
+ 
+        function fail(){
+            document.getElementById("output").innerHTML = "<strong>Unable to get current location!</strong>";
+        }
+ 
+        function displayLocation(position) {
+ 
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            document.getElementById("output").innerHTML = "Latitude: " + latitude + "; Longitude: " + longitude + "<br /><br /><br />";
+ 
+            var map = new Image;
+            map.src = "http://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=10&size=300x300&sensor=false";
+            document.getElementById("output").appendChild(map);
+            map.align = '';
+        }
+    </script>
+ 
+</head>
+<body>
+    <h1>Get current geolocation</h1>
+    <span>Note: It may take a while!Also if you are using proxy/VPN it may fail to get location.
+        <br />
+        I've tried at home via my WiFi and it worked only on IE (all versions) :D
+        <br />
+        <a href="https://dl.dropbox.com/u/93896656/Screenshot_2013-04-07-15-28-35.png">HERE</a> you can find
+        a screenshot of my mobile, using the GSM network to get my location.
+    </span>
+    <a href="#" onclick="onGetPosBtnClick()" title="Get location">get location</a>
+    <p id="output"></p>
+</body>
+</html>

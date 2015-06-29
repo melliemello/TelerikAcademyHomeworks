@@ -1,0 +1,44 @@
+div, button, form, p, a,img,span{
+	padding:0;
+	margin:0;
+}
+button {
+	
+		border-color:transparent;
+		background-color:white;
+		
+}
+
+	button span, button a{
+		width:25px;
+		height:54px;
+		background-repeat:no-repeat;
+		line-height:47px;
+		display:inline-block;
+		font-weight:bold;
+	
+	}
+		button span.left,button a.left {
+			background-image: url("imgs/left.png");
+			float:left;
+		}
+		
+		button span.right , button a.right {
+			background-image: url("imgs/right.png");
+			float:right;
+			
+	
+		}
+		button span.center, button a.center {
+			width:auto;
+			background-image: url("imgs/main.png");
+			background-repeat:repeat-x;
+			*float:left;
+			color:black;
+			text-decoration:none;
+	
+		
+			
+			
+		}
+		

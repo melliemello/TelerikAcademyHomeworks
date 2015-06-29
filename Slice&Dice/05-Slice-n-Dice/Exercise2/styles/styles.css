@@ -1,0 +1,253 @@
+body, spn, div, a, li, ul, h1,h2, hgroup,p,img,section, article ,footer{
+	padding:0;
+	margin:0;
+	font-family: sans-serif;
+}
+
+body {
+	background: url("../imgs/back.png") repeat-x;
+}
+img{
+	display:block;
+	border:0;
+}
+.clearfloat{
+	clear:both;
+	display:block;
+	content:"";
+	height:1px;
+	zoom:1;
+}
+div#wrapper{
+	width:738px;
+	margin:0 auto;
+}
+span#left-container, span#right-container{
+	width:9px;
+	height:743px;
+	float:left;
+	display:inline-block;
+	background-repeat:no-repeat;
+}
+
+span#left-container{
+	background: url("../imgs/left_container.png") black;
+	
+}
+span#right-container{
+	background: url("../imgs/right_container.png") black;
+	
+}
+
+
+div#container{
+	float:left;
+	width:718px;
+	background: url("../imgs/header.jpg") no-repeat white;
+	background-position:top;
+	position:relative;
+	
+
+}
+
+
+
+/* Left Column*/
+
+div#left-column{
+	width:222px;
+	
+}
+
+/* Left Column >>> Main Navigation*/
+	ul#main-nav{
+		width:222px;
+		background: #2a2a2a;
+		margin-top:38px;
+		border-bottom: 17px solid #cdc4aa;
+		
+		
+	}
+	
+		ul#main-nav li{
+			list-style-type:none;
+			padding: 5px 0 5px 0;
+			border-bottom: 1px solid #797976;
+			background-image: url("../imgs/bullet.png");
+			background-repeat:no-repeat;
+			background-position:180px 14px ;
+		}
+			ul#main-nav li a{
+				padding: 0 0 5px 5px;
+				margin-left:28px;
+				font-family:"Times New Roman";
+				font-size: 12px;
+				line-height:12px;
+				color:white;
+				text-decoration:none;
+				border-left:1px solid #797976;
+				font-weight:bold;
+			}
+			
+			ul#main-nav li.active a{
+				color:#d6b471;
+				
+			}
+/* Left Column >>> Latest News*/	
+
+	div#latest-news{
+		padding: 26px 22px 5px 28px;
+		width:172px;
+		height:184px;
+		overflow:hidden;
+		background:url("../imgs/left_gradient.png") repeat-y;
+	}
+		div#latest-news article{
+			border-bottom: 2px dotted #e0dfdc;
+		}
+		div#latest-news article:last-of-type{
+			border-bottom: none;;
+		}
+		
+		.standart-paragraph{
+			font-size:12px;
+			color:#75673f;
+			margin: 10px 0;
+			
+		}
+		
+		.standart-link{
+			font-size:10px;
+			color:#75673f;
+			font-weight:bold;
+			
+		}
+	
+		div#latest-news time{
+			font-weight:bold;
+		}
+		article footer{
+			
+			text-align:right;
+			line-height:10px;
+
+		}
+		
+
+/* Left Column >>> Support*/
+		div#support{
+			background: url("../imgs/support.png") no-repeat;
+			height: 94px;
+			
+		}
+		div#support span.tel{
+			margin: 7px 20px;
+			display:inline-block;
+			font-size:11px;
+			font-weight:bold;
+			color: #262521;
+		}
+		
+		
+/* Main Content*/
+
+section#main-content{
+	padding-top: 38px;
+	padding-left:5px;
+	position:absolute;
+	top:265px;
+	left:246px;
+	width:467px;
+	height:375px;
+	overflow:hidden;
+	
+}
+
+	section#main-content article {
+		padding:0  18px 0 5px;
+	}
+	
+	
+		section#main-content  h1  {
+			padding-bottom:6px;
+			font-size:18px;
+			color:#bc8800;
+			font-weight:normal;
+			border-bottom:1px solid #bc8800;
+			text-decoration:none;
+		}
+		
+		article img {
+			
+			width:139px;
+			height:107px;
+			border: 5px solid white;
+			border-radius:5px;
+			
+		}
+		
+		section#main-content  a.image-link{
+			float:left;
+			border: 5px solid #e5deca;
+			border-radius:5px;
+			text-align:center;
+			font-size:8px;
+			color:#7e6621;
+			font-weight:bold;
+			text-decoration:none;
+		}
+		
+		section#main-content a.image-link, p.standart-paragraph{
+			margin-top:16px;
+			font-size:10px;
+		}
+		section#main-content  p.standart-paragraph{
+			padding-left: 175px;
+		}
+		
+		
+		
+			section#secondary {
+				margin-top:5px;
+			}
+				section#secondary article.secondary-article{
+				width:45%;
+				float:left;
+				}
+				
+				section#secondary h1{
+					font-size:14px;
+				}
+				section#secondary img{
+					width:86px;
+					height:66px;
+				}
+				
+				section#secondary p.standart-paragraph{
+				
+					padding:  0 0 0 116px;
+		
+				}
+				section#main-content article footer{
+				
+					margin-top: -20px;
+					text-align:right;
+		
+				}
+	
+	/*Footer*/
+	
+	footer#page-footer{
+		background:#dfd4b5;
+		margin-top:30px;
+		
+		text-align:center;
+		line-height:57px;
+	}
+	
+	div#bottom{
+		min-height:9px;
+		width:100%;
+			background: #9a8a65;
+
+	}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Exercise 10</title>
+		<style type="text/css">
+			table, td, th
+			{
+				border: 1px solid;
+				border-collapse: collapse;
+				padding: 5px 37px 5px 5px;
+				text-align: left;
+			}
+						
+			thead , tfoot 
+			{
+				background: #dfe3e8;
+			}
+					
+			input
+			{
+				vertical-align: middle;
+				margin-right: 3px;
+			}
+			
+			thead input 
+			{
+				float:left;
+			}
+			
+			.alignRight
+			{
+			float: right;
+			}
+			
+			
+			
+			.marginLeft
+			{
+				margin-left: 20px;
+			}
+			
+			a 
+			{
+				margin: 3px;
+				vertical-align: middle;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<form name="products" action="#">
+			<table>
+				<thead>
+					<tr>
+						<th colspan="6">Drag a column header and drop it here to group by that column</th>
+					</tr>
+					<tr>
+						<th>Product ID</th>
+						<th>Product Name</th>
+						<th>Unit Price</th>
+						<th>Quantity per Unit</th>
+						<th>Units in Stock</th>
+						<th>Discounted</th>
+					</tr>
+					<tr>
+						<th><input type="text" name="ID" size="4"></th>
+						<th><input type="text" name="name" size="20"></th>
+						<th><input type="text" name="price" size="9"> <input type="image" src="img.jpg" alt="button"> </th>
+						<th><input type="text" name="qty" size="8"></th>
+						<th><input type="text" name="units" size="8"> <input type="image" src="img.jpg" alt="button"> </th>
+						<th><input type="checkbox"> <input type="image" src="img.jpg" alt="button"></th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td colspan="6"><input type="image" src="left_left.jpg" alt="home"> <input type="image" src="left.jpg" alt="previus"> <a href="#">1</a> <a href=#>2</a> 
+						<a href="#">3</a> <a href="#">.</a><a href="#">.</a><a href="#">7</a> <a href="#">8</a>
+						<input type="image" src="right.jpg" alt="next"> <input type="image" src="right_right.jpg" alt="lastpage">
+						<span class="marginLeft">Page size</span>
+						<select>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+						</select>
+						
+						<span class="alignRight"> 44 items in 8 pages</span>
+						</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>CHAI</td>
+						<td>3.00 USD</td>
+						<td>3 boxes *15 bags</td>
+						<td>15</td>
+						<td><input type="checkbox"> </td>
+					</tr>
+					
+					<tr>
+						<td>1</td>
+						<td>CHAI</td>
+						<td>3.00 USD</td>
+						<td>3 boxes *15 bags</td>
+						<td>15</td>
+						<td><input type="checkbox"> </td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>CHAI</td>
+						<td>3.00 USD</td>
+						<td>3 boxes *15 bags</td>
+						<td>15</td>
+						<td><input type="checkbox"></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>CHAI</td>
+						<td>3.00 USD</td>
+						<td>3 boxes *15 bags</td>
+						<td>15</td>
+						<td><input type="checkbox"> </td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>CHAI</td>
+						<td>3.00 USD</td>
+						<td>3 boxes *15 bags</td>
+						<td>15</td>
+						<td><input type="checkbox"></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>CHAI</td>
+						<td>3.00 USD</td>
+						<td>3 boxes *15 bags</td>
+						<td>15</td>
+						<td><input type="checkbox"></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>CHAI</td>
+						<td>3.00 USD</td>
+						<td>3 boxes *15 bags</td>
+						<td>15</td>
+						<td><input type="checkbox"> </td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>

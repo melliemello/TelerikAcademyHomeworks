@@ -1,0 +1,6 @@
+Here is some text containing the 'finish' word as substring
+
+The wordstart should be replaced in each line 
+
+if it's found there and finish is a separate word
+

@@ -1,0 +1,216 @@
+//less stylesheet
+
+
+//Global Variables
+
+@bgcolor:#9215f2;
+@font-color: white;
+
+
+
+//Mixins
+
+.linear-gradient{
+background: @bgcolor;
+background: -moz-linear-gradient(top,  lighten(@bgcolor,20%) 0%, lighten(@bgcolor, 10%) 41%, @bgcolor 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lighten(@bgcolor, 10%)), color-stop(41%,lighten(@bgcolor, 10%)), color-stop(100%,@bgcolor)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  lighten(@bgcolor, 20%) 0%,lighten(@bgcolor, 10%) 41%,@bgcolor 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  lighten(@bgcolor, 20%) 0%,lighten(@bgcolor, 10%) 41%,@bgcolor 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  lighten(@bgcolor, 20%) 0%,lighten(@bgcolor, 10%) 41%,@bgcolor 100%); /* IE10+ */
+background: linear-gradient(to bottom,  lighten(@bgcolor, 20%) 0%,lighten(@bgcolor, 10%) 41%,@bgcolor 100%); /* W3C */
+
+
+}
+
+.border(@radius){
+	border-radius:@radius;
+	border:1px solid black;
+}
+
+.clearfix{
+	zoom:1;
+		&:after{
+			display:block;
+			height:0;
+			content:"";
+			clear:both;
+		}
+}
+
+nav {
+	.clearfix;
+}
+
+
+//Styles
+
+body, div, section, article, aside, header, input, h1, h2,h3,h4, p, ul, li{
+	padding:0;
+	margin:0;
+}
+
+body{
+	background-color: @bgcolor;
+	color:@font-color;
+	font-size:87.5%; // defaut body size:14px;
+	header{
+	
+	div#header-container{ 
+			padding: 25px;
+			&.linear-gradient
+			div#logo-container {
+				width:500px;
+				float:left;
+			}
+			div#reg-form-container {
+            float: right;
+            position: relative;
+            right: 5%;
+            top: 50%;
+			margin-bottom:10px;
+				label{
+					text-align:left;
+					margin:10px;
+				}
+				input[type="text"], input[type="password"]{
+					background: @bgcolor;
+					.border(5px);
+					margin:10px;
+					padding:3px;
+					
+					
+				}
+				button{
+					background: @bgcolor;
+					.border(10px);
+					color:white;
+					border-style:outset;
+					padding:5px 15px;
+				}
+        }
+			
+	}
+		nav{ 
+				clear:both;
+				.border(5px);
+				margin:0 20px;
+				ul{
+					list-style-type:none;
+					
+					li{
+						float:left;
+						padding:10px;
+							a{
+								padding: 10px;
+								color:@font-color;
+							
+								text-decoration:none;
+								font-size:1.1em;
+							}
+							ul {
+								display:none;
+							}
+							&:hover ul { 
+								display: block;
+								position:absolute;
+								padding:10px;
+								margin-top:10px;
+								border-radius:15px;
+								background-color: lighten(@bgcolor,20%);
+								
+									li{
+										height:20px;
+										float:none;
+										padding:10px 3px;
+										border-bottom:1px solid black;
+											&:last-of-type {border-bottom:0;}
+											a{text-decoration:none;
+											padding:7px 3px;
+											line-height:20px;}
+									}
+								
+							}
+					}
+				}
+				
+			}
+	}
+	section{
+		width:72%;
+		float:left;
+		margin:2%;
+			article{
+				.border(10px);
+				margin:20px 0;
+				padding:20px;
+					header{
+						padding-bottom:10px;
+						font-size:1.1em;
+					}
+					footer{
+						margin-top:20px;
+						text-align:right;
+					}
+					
+					a{
+						color: lighten(@bgcolor,20%);
+						text-decoration:none;
+					}
+					
+				
+					
+			}
+	}
+	
+	
+	aside{
+		float:left;
+		width:20%;
+		min-width:200px;
+		margin:2%;
+		
+			
+			& > ul{
+			list-style-type:none;
+
+			padding:20px 0;
+			> li{
+				padding:20px;
+				margin:15px 0;
+				.border(5px);	
+						h2{
+							font-size:1em;
+							padding-bottom:10px;
+						}
+						
+						a{
+							color:#a896bd;
+							text-decoration:none;
+						}
+						
+						em{
+							color:#a896bd;
+						}
+						
+						ul {
+							padding-left:25px;
+							
+	
+							li{
+								list-style-image: url("images/li-dot.png");
+							}
+						}
+				}
+			}
+	}
+	
+	footer{
+		position:relative;
+		bottom:0;
+		clear:both;
+		text-align:center;
+		font-size:1.1em;
+		font-weight:bold;
+
+	}
+}

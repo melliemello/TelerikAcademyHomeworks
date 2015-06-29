@@ -1,0 +1,149 @@
+@import "_mixins.scss";
+
+$bgcolor:#9215f2;
+$main-font-color:white;
+$border-radius: 15px;
+
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div#header-container, nav , section, aside, #mranlio {
+	@include clearfix;
+}
+
+body{
+	font: 14px normal Arial;
+    color: $main-font-color;
+	background-color: $bgcolor;
+	
+		a {
+			color:$main-font-color;
+		}
+	
+		> header{
+			padding:25px 5px 15px 15px;
+			@include header-background(#d89fff, #9215f2);
+		}
+		li{
+		list-style-type:none;
+		}
+}
+
+
+	
+	div#header-container{
+		div#logo-container{
+			float: left;
+			position: relative;}
+		div#reg-form-container {
+            float: right;
+            position: relative;
+            right: 5%;
+            top: 50%;
+				label{
+					text-align:left;
+					margin:10px;
+				}
+				input[type="text"], input[type="password"]{
+					background: $bgcolor;
+					@include border($border-radius - 5px);
+					margin:10px;
+					padding:3px;
+					
+				}
+				button{
+					background: $bgcolor;
+					@include border($border-radius - 5px);
+					color:white;
+					border-style:outset;
+					padding:5px 15px;
+				}
+        }
+	}
+	
+		nav{ 
+			@include border($border-radius - 5px);
+			margin:15px;
+			> ul > li {
+				padding:10px;
+				float:left;
+				
+					a {	font-size:1.3em;
+						text-decoration:none;
+							}
+							
+					ul  {display:none;}
+						&:hover ul  {
+							display: block;
+							position:absolute;
+							padding:10px;
+							margin-top:10px;
+							border-radius:15px;
+							background-color:rgba(179, 94, 243, 0.9);
+							
+								li{
+									float:none;
+									padding:10px 3px;
+									border-bottom:1px solid black;
+									&:last-of-type {border-bottom:0;}
+									
+										a{
+											text-decoration:none;
+											padding:7px 3px;
+											
+										}
+								}
+							
+									
+						}
+				}
+			}
+	section{
+		float:left;
+		width:75%;
+			article{
+				@include border($border-radius);
+				padding:20px;
+				margin:20px;
+					header{
+						font-size:1.2em;
+						padding-bottom:20px;
+					}
+					footer{
+							margin-top:15px;
+							text-align:right;
+							font-size:1em;
+					}
+			}
+	}
+	
+	aside{
+		width:20%;
+		float:left;
+			ul > li{
+				@include border($border-radius - 7px);
+				margin:20px 0;
+				padding:20px;
+					h2{
+						padding-bottom:20px;
+						font-size:1.1em;
+					}
+					ul li {
+						border:0;
+						list-style-image: url("images/li-dot.png");
+						margin: 5px 40px;
+						padding:0;
+					}
+			}
+		
+		
+	}
+	
+	footer{
+		width:100%;
+		font-size:1.2em;
+		text-align: center;
+	}

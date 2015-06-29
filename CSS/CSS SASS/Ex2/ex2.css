@@ -1,0 +1,129 @@
+#thumbnails {
+  zoom: 1; }
+  #thumbnails:after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both; }
+  #thumbnails li {
+    float: left;
+    list-style-type: none; }
+
+#thumbnails li:nth-child(7) a {
+  background-image: url("images/7.jpg");
+  background-size: 150px 110px;
+  width: 150px;
+  height: 110px;
+  display: inline-block;
+  margin: 3px; }
+
+#thumbnails li:nth-child(6) a {
+  background-image: url("images/6.jpg");
+  background-size: 150px 110px;
+  width: 150px;
+  height: 110px;
+  display: inline-block;
+  margin: 3px; }
+
+#thumbnails li:nth-child(5) a {
+  background-image: url("images/5.jpg");
+  background-size: 150px 110px;
+  width: 150px;
+  height: 110px;
+  display: inline-block;
+  margin: 3px; }
+
+#thumbnails li:nth-child(4) a {
+  background-image: url("images/4.jpg");
+  background-size: 150px 110px;
+  width: 150px;
+  height: 110px;
+  display: inline-block;
+  margin: 3px; }
+
+#thumbnails li:nth-child(3) a {
+  background-image: url("images/3.jpg");
+  background-size: 150px 110px;
+  width: 150px;
+  height: 110px;
+  display: inline-block;
+  margin: 3px; }
+
+#thumbnails li:nth-child(2) a {
+  background-image: url("images/2.jpg");
+  background-size: 150px 110px;
+  width: 150px;
+  height: 110px;
+  display: inline-block;
+  margin: 3px; }
+
+#thumbnails li:nth-child(1) a {
+  background-image: url("images/1.jpg");
+  background-size: 150px 110px;
+  width: 150px;
+  height: 110px;
+  display: inline-block;
+  margin: 3px; }
+
+#thumbnails > li:nth-child(1) a:focus + ul li {
+  background: url("images/1.jpg");
+  background-size: 450px 350px;
+  width: 450px;
+  height: 350px;
+  position: absolute;
+  top: 200px;
+  left: 200px; }
+
+#thumbnails > li:nth-child(2) a:focus + ul li {
+  background: url("images/2.jpg");
+  background-size: 450px 350px;
+  width: 450px;
+  height: 350px;
+  position: absolute;
+  top: 200px;
+  left: 200px; }
+
+#thumbnails > li:nth-child(3) a:focus + ul li {
+  background: url("images/3.jpg");
+  background-size: 450px 350px;
+  width: 450px;
+  height: 350px;
+  position: absolute;
+  top: 200px;
+  left: 200px; }
+
+#thumbnails > li:nth-child(4) a:focus + ul li {
+  background: url("images/4.jpg");
+  background-size: 450px 350px;
+  width: 450px;
+  height: 350px;
+  position: absolute;
+  top: 200px;
+  left: 200px; }
+
+#thumbnails > li:nth-child(5) a:focus + ul li {
+  background: url("images/5.jpg");
+  background-size: 450px 350px;
+  width: 450px;
+  height: 350px;
+  position: absolute;
+  top: 200px;
+  left: 200px; }
+
+#thumbnails > li:nth-child(6) a:focus + ul li {
+  background: url("images/6.jpg");
+  background-size: 450px 350px;
+  width: 450px;
+  height: 350px;
+  position: absolute;
+  top: 200px;
+  left: 200px; }
+
+#thumbnails > li:nth-child(7) a:focus + ul li {
+  background: url("images/7.jpg");
+  background-size: 450px 350px;
+  width: 450px;
+  height: 350px;
+  position: absolute;
+  top: 200px;
+  left: 200px; }

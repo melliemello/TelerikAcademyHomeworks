@@ -1,0 +1,128 @@
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+div#header-container, nav, section, aside, #mranlio {
+  zoom: 1; }
+  div#header-container:after, nav:after, section:after, aside:after, #mranlio:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+body {
+  font: 14px normal Arial;
+  color: white;
+  background-color: #9215f2; }
+  body a {
+    color: white; }
+  body > header {
+    padding: 25px 5px 15px 15px;
+    background: #9215f2;
+    background: -moz-linear-gradient(top, #d89fff 0%, #d89fff 41%, #9215f2 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d89fff), color-stop(41%, #d89fff), color-stop(100%, #9215f2));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #d89fff 0%, #d89fff 41%, #9215f2 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #d89fff 0%, #d89fff 41%, #9215f2 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #d89fff 0%, #d89fff 41%, #9215f2 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #d89fff 0%, #d89fff 41%, #9215f2 100%);
+    /* W3C */
+    }
+  body li {
+    list-style-type: none; }
+
+div#header-container div#logo-container {
+  float: left;
+  position: relative; }
+div#header-container div#reg-form-container {
+  float: right;
+  position: relative;
+  right: 5%;
+  top: 50%; }
+  div#header-container div#reg-form-container label {
+    text-align: left;
+    margin: 10px; }
+  div#header-container div#reg-form-container input[type="text"], div#header-container div#reg-form-container input[type="password"] {
+    background: #9215f2;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 3px; }
+  div#header-container div#reg-form-container button {
+    background: #9215f2;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    border-style: outset;
+    padding: 5px 15px; }
+
+nav {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px; }
+  nav > ul > li {
+    padding: 10px;
+    float: left; }
+    nav > ul > li a {
+      font-size: 1.3em;
+      text-decoration: none; }
+    nav > ul > li ul {
+      display: none; }
+    nav > ul > li:hover ul {
+      display: block;
+      position: absolute;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 15px;
+      background-color: rgba(179, 94, 243, 0.9); }
+      nav > ul > li:hover ul li {
+        float: none;
+        padding: 10px 3px;
+        border-bottom: 1px solid black; }
+        nav > ul > li:hover ul li:last-of-type {
+          border-bottom: 0; }
+        nav > ul > li:hover ul li a {
+          text-decoration: none;
+          padding: 7px 3px; }
+
+section {
+  float: left;
+  width: 75%; }
+  section article {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px; }
+    section article header {
+      font-size: 1.2em;
+      padding-bottom: 20px; }
+    section article footer {
+      margin-top: 15px;
+      text-align: right;
+      font-size: 1em; }
+
+aside {
+  width: 20%;
+  float: left; }
+  aside ul > li {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px; }
+    aside ul > li h2 {
+      padding-bottom: 20px;
+      font-size: 1.1em; }
+    aside ul > li ul li {
+      border: 0;
+      list-style-image: url("images/li-dot.png");
+      margin: 5px 40px;
+      padding: 0; }
+
+footer {
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center; }

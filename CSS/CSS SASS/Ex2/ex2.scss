@@ -1,0 +1,41 @@
+@import "_mixins.scss";
+
+#thumbnails{
+			@include clearfix;												
+			li{ 
+				float:left;
+				list-style-type:none;
+				}
+	}
+//Thumbnails 
+
+$item:7;
+
+@while $item > 0 {
+	#thumbnails  li:nth-child(#{$item}) a {
+		background-image: url("images/#{$item}.jpg");
+		background-size:150px 110px;
+		width:150px;
+		height:110px;
+		display:inline-block;
+		margin:3px;
+		}
+		$item:$item - 1;	
+}
+
+//Picture Zoom
+
+@for $item from 1 through 7 {
+ 	#thumbnails > li:nth-child(#{$item}) a:focus + ul li {
+		background: url("images/#{$item}.jpg");
+		background-size: 450px 350px;
+		width:450px;
+		height:350px;
+		position:absolute;
+		top:200px;
+		left:200px;
+		}
+	}
+
+
+ 

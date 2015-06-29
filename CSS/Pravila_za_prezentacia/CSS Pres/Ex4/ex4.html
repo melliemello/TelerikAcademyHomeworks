@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CSS Styling </title>
+    <link href="ex4.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="window" >
+		<button class="close"></button>
+		<button class="max"></button>
+		<button class="min"></button>
+		
+		<p>Calculator</p>
+		
+		<section id="calculator" >
+			<div id="menu">
+				<ul>
+					<li>View</li>
+					<li>Edit</li>
+					<li>Help</li>
+				</ul>
+			</div>
+			<div id="calculatorContent">
+				<form>
+					<input type="text">
+						
+					
+				<table class="table1">
+					<tbody>
+						<tr>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+						</tr>
+						<tr>
+							<td>63</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>47</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0100</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0110</td>
+							<td>1001</td>
+							<td>1011</td>
+						</tr>
+						<tr>
+							<td>31</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>15</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table2">
+					<tr>
+						<td class="border" colspan="2" rowspan="3">
+							<table>
+								<tr>
+									<td>
+										<input type="radio" name ="group1" id="hex" >
+									</td>
+									<td>
+										<label for="hex">Hex</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="group1" id="dec">
+									</td>
+									<td>
+										<label for="dec">Dec</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="group1" id="oct">
+									</td>
+									<td>
+										<label for="oct">Oct</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="group1" id="bin">
+									</td>
+									<td>
+										<label for="bin">Bin</label>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td><button></button></td>
+						<td><button class="styleMod">Mod</button></td>
+						<td><button>A</button></td>
+						<td><button>MC</button></td>
+						<td><button>MR</button></td>
+						<td><button>MS</button></td>
+						<td><button>M+</button></td>
+						<td><button>M-</button></td>
+					</tr>
+					<tr>
+						<td><button class="styleMod">(</button></td>
+						<td><button class="styleMod">)</button></td>
+						<td><button>B</button></td>
+						<td><button class="styleMod"><-</button></td>
+						<td><button class="styleMod">CE</button></td>
+						<td><button class="styleMod">C</button></td>
+						<td><button class="styleMod">*</button></td>
+						<td><button>V</button></td>
+					</tr>
+					<tr>
+						<td><button class="styleMod">Rol</button></td>
+						<td><button class="styleMod">RoR</button></td>
+						<td><button>C</button></td>
+						<td><button class="numbers">7</button></td>
+						<td><button class="numbers">8</button></td>
+						<td><button class="numbers">9</button></td>
+						<td><button class="styleMod">/</button></td>
+						<td><button>%</button></td>
+					</tr>
+					<tr>
+						<td class="border" colspan="2" rowspan="3">
+							<table>
+								<tr>
+									<td>
+										<input type="radio" name ="group2" id="qword" >
+									</td>
+									<td>
+										<label for="qword">Qword</label>
+									</td>
+									
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="group2" id="dword">
+									</td>
+									<td>
+										<label for="dword">Dword</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="group2" id="word">
+									</td>
+									<td>
+										<label for="word">Word</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="group2" id="byte">
+									</td>
+									<td>
+										<label for="byte">Byte</label>
+									</td>
+								</tr>
+							</table>						
+						</td>
+						<td><button class="styleMod">Or</button></td>
+						<td><button class="styleMod">Xor</button></td>
+						<td><button>D</button></td>
+						<td><button class="numbers">4</button></td>
+						<td><button class="numbers">5</button></td>
+						<td><button class="numbers">6</button></td>
+						<td><button class="styleMod">*</button></td>
+						<td><button>1/x</button></td>
+					</tr>
+					<tr>
+						<td><button class="styleMod">Lsh</button></td>
+						<td><button class="styleMod">Rsh</button></td>
+						<td><button>E</button></td>
+						<td><button class="numbers">1</button></td>
+						<td><button class="numbers">2</button></td>
+						<td><button class="numbers">3</button></td>
+						<td><button class="styleMod">-</button></td>
+						<td rowspan="2"><button class="numbers" value="=">=</button></td>
+					</tr>
+					<tr>
+						<td><button class="styleMod">Not</button></td>
+						<td><button class="styleMod">And</button></td>
+						<td><button>F</button></td>
+						<td colspan="2"><button class="numbers">0</button></td>
+						<td><button>.</button></td>
+						<td><button class="numbers">+</button></td>
+						
+					</tr>
+				</table>
+				</td>
+				</tr>
+			</form>
+			</div>
+			
+		</section>
+	</div>
+</body>
+</html>
