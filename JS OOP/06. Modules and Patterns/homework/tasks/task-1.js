@@ -86,23 +86,32 @@ function solve() {
     }
   }
 
-  function validateResults(results){
-    if(this._scores[results.StudentID] || isNaN(Number(results.Score))){
+  function validateResults(results, scoreList){
+    if(scoreList[results.StudentID] || isNaN(Number(results.score))){
       throw new Error();
     }
   }
 
   function calculateStudentResult(student, scores, homeworks){
     var homeworksResult = 0;
-    homeworks.reduce(function(res, curr){;
-      res += curr
-    }, homeworksResult);
-    homeworksResult /= homeworks.length;
-    return (0.25 * homeworksResult) + (scores[student.id] * 0.75);
+    var examResult = 0;
+
+    if(homeworks[student.id]){
+      homeworksResult = homeworks[student.id].reduce(function(result, current){;
+        return result += current
+      }, homeworksResult);
+      homeworksResult = homeworksResult / homeworks[student.id].length;
+    }
+
+    if(scores[student.id]){
+      examResult = scores[student.id] ;
+    }
+
+    return (0.25 * homeworksResult) + (examResult * 0.75);
   }
 
-	var Course = {
-		init: function(title, presentations) {
+  var Course = {
+    init: function(title, presentations) {
       validateCourseTitle(title);
       if(presentations.length){
         presentations.forEach(function(element){
@@ -118,9 +127,9 @@ function solve() {
       this._scores = {};
       this._homeworks = {};
       return this;
-		},
+    },
 
-		addStudent: function(name) {
+    addStudent: function(name) {
       var nameArray = getValidatedFullName(name);
       var id = this._students.length + 1;
       this._students.push({
@@ -130,38 +139,38 @@ function solve() {
       });
 
       return id;
-		},
+    },
 
-		getAllStudents: function() {
+    getAllStudents: function() {
       return this._students.slice();
-		},
+    },
 
-		submitHomework: function(studentID, homeworkID) {
+    submitHomework: function(studentID, homeworkID) {
       validateStudentID(studentID, this._students);
       validateHomeworkID(homeworkID, this._presentations);
       this._homeworks[studentID] = this._homeworks[studentID] || [];
       this._homeworks[studentID].push(homeworkID);
-		},
+    },
 
-		pushExamResults: function(results) {
-      results.forEach(function(){
-        validateStudentID(results.StudentID);
-        validateResults(results);
-        this._scores[results.StudentID] = results.Score;
+    pushExamResults: function(results) {
+      var self = this;
+      results.forEach(function(result){
+        validateStudentID(result.StudentID, self._students);
+        validateResults(result, self._scores);
+        self._scores[result.StudentID] = results.Score;
       });
-		},
+    },
 
-		getTopStudents: function() {
-      return this._students.sort(function(a,b){
+    getTopStudents: function() {
+      return this._students.sort(function(a, b){
         aResult = calculateStudentResult(a, this._scores, this._homeworks);
         bResult = calculateStudentResult(b, this._scores, this._homeworks);
         return bResult - aResult;
       }).slice(0,10);
-		}
-	};
+    }
+  };
 
-	return Course;
+  return Course;
 }
-
 
 module.exports = solve;
