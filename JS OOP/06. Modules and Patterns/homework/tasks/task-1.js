@@ -157,7 +157,7 @@ function solve() {
       results.forEach(function(result){
         validateStudentID(result.StudentID, self._students);
         validateResults(result, self._scores);
-        self._scores[result.StudentID] = results.Score;
+        self._scores[result.StudentID] = result.score;
       });
     },
 
