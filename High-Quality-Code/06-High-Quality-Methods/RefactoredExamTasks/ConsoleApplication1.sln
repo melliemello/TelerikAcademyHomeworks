@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-De-Code", "ConsoleApplication1\01-De-Code.csproj", "{E3A1B5A5-2F4A-4083-B38C-8F96B282BFCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Inreasing-Sequence", "02-Inreasing-Sequence\02-Inreasing-Sequence.csproj", "{90D3E6FD-E7F3-4A55-9DC2-7FE402544A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Matrix", "03-Matrix\03-Matrix.csproj", "{8B2C5CEB-F558-46D8-9AE5-674AA4487C8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3A1B5A5-2F4A-4083-B38C-8F96B282BFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A1B5A5-2F4A-4083-B38C-8F96B282BFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A1B5A5-2F4A-4083-B38C-8F96B282BFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A1B5A5-2F4A-4083-B38C-8F96B282BFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D3E6FD-E7F3-4A55-9DC2-7FE402544A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D3E6FD-E7F3-4A55-9DC2-7FE402544A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D3E6FD-E7F3-4A55-9DC2-7FE402544A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D3E6FD-E7F3-4A55-9DC2-7FE402544A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B2C5CEB-F558-46D8-9AE5-674AA4487C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2C5CEB-F558-46D8-9AE5-674AA4487C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2C5CEB-F558-46D8-9AE5-674AA4487C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2C5CEB-F558-46D8-9AE5-674AA4487C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
