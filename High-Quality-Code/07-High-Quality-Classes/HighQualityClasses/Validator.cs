@@ -20,7 +20,7 @@ namespace HighQualityClasses
         {
             if (value == null)
             {
-                throw new ArgumentNullException(message);
+                throw new ArgumentException(message);
             }
 
             if (value.Length < 1)

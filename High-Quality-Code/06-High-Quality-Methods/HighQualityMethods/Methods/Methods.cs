@@ -13,7 +13,7 @@ namespace HighQualityMethods.Methods
             bool isZeroOrNegativeNumber = a <= 0 || b <= 0 || c <= 0;            
             if (isZeroOrNegativeNumber)
             {
-                throw new ArgumentOutOfRangeException("A triangle side cannot be 0 or negative number");
+                throw new ArgumentOutOfRangeException("TriangleSide", "A triangle side cannot be 0 or negative number");
             }
 
             bool isPossibleTriangle = a + b > c && a + c > b && b + c > a;
@@ -31,7 +31,7 @@ namespace HighQualityMethods.Methods
         {
             if (digit < 0 || 10 <= digit)
             {
-                throw new ArgumentOutOfRangeException("Input number should be in the range 0 - 9");
+                throw new ArgumentOutOfRangeException("digit", "Input number should be in the range 0 - 9");
             }
 
             string digitAsText;
@@ -68,28 +68,28 @@ namespace HighQualityMethods.Methods
                     digitAsText = "nine";
                     break;
                 default:
-                    throw new Exception("Somthing went wrong, gan't convert digit to text");
+                    throw new Exception("Somthing went wrong, can't convert digit to text");
             }
 
             return digitAsText;
         }
 
-        public static int FindMax(params int[] elements)
+        public static int FindMax(params int[] numbers)
         {
-            if (elements == null || elements.Length == 0)
+            if (numbers == null || numbers.Length == 0)
             {
-                throw new ArgumentNullException("Input cannot be null ot empty");
+                throw new ArgumentNullException("numbers", "Input cannot be null ot empty");
             }
 
-            for (int i = 1; i < elements.Length; i++)
+            for (int i = 1; i < numbers.Length; i++)
             {
-                if (elements[i] > elements[0])
+                if (numbers[i] > numbers[0])
                 {
-                    elements[0] = elements[i];
+                    numbers[0] = numbers[i];
                 }
             }
 
-            return elements[0];
+            return numbers[0];
         }
 
         public static void PrintAsNumber(object number, string format)
